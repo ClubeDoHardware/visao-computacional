@@ -1,0 +1,26 @@
+# Python
+__pycache__
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Ambientes virtuais
+env/
+venv/
+.env/
+test_env
+
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados/modelos
+*.h5
+*.tflite
+*.onnx
+*.log
