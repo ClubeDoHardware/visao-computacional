@@ -1,7 +1,7 @@
 from pyfirmata import Arduino,SERVO
 import time
 print("tentando conectar ao arduino")
-board = Arduino('COM21')
+board = Arduino('COM3')
 
 pin1 = 10
 pin2 = 9
@@ -15,6 +15,7 @@ board.digital[pin3].mode = SERVO
 board.digital[pin4].mode = SERVO
 board.digital[pin5].mode = SERVO
 print("conectado")
+
 def rotateServo(pino,angle):
     board.digital[pino].write(angle)
     time.sleep(0.015)
